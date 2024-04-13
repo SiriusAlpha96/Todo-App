@@ -1,5 +1,5 @@
 const express = require("express");
-const { createTodo } = require("./type");
+const { createTodo, updateTodo } = require("./type");
 const app = express();
 
 app.use(express.json());
@@ -45,7 +45,7 @@ app.post("/completed", async function(req,res){
         return;
      }
      await todo.update({
-        _id:req.body._id
+        _id: req.body.id
      },{
         completed: true
      })
