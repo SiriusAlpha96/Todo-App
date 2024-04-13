@@ -19,7 +19,10 @@ app.post("/todo", async function(req,res){
     await todo.create({
         title: createPayLoad.title,
         description: createPayLoad.description,
-        completed: false
+        completed: {
+            type: Boolean,
+            default: false
+        }
     })
     res.json({
         msg: "Todo created"
