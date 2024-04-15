@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { CreateTodo } from "./components/CreateTodo"
 import {Todos} from "./components/Todos";
+import { useEffect } from "react";
 
 
 function App() {
@@ -11,12 +12,13 @@ function App() {
   //   const json = await res.json();
   //   setTodos(json.todos)
   // })
+  
 
   return (
 
     <>
-      <CreateTodo></CreateTodo>
-      <Todos todos={todos}></Todos>
+      <CreateTodo setTodos={setTodos}></CreateTodo>
+      <Todos todos={todos} setTodos={setTodos}></Todos>
     </>
   )
 }
