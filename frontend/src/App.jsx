@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { CreateTodo } from "./components/CreateTodo"
 import {Todos} from "./components/Todos";
-import { useEffect } from "react";
+
 
 
 function App() {
