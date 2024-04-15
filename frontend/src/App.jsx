@@ -17,8 +17,10 @@ function App() {
   return (
 
     <>
+    <div style={{width: "100vm",height:"100vh", background:"#eeeeee"}}>
       <CreateTodo setTodos={setTodos}></CreateTodo>
       <Todos todos={todos} setTodos={setTodos}></Todos>
+      </div>
     </>
   )
 }

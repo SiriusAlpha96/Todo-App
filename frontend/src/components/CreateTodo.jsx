@@ -5,6 +5,12 @@ export function CreateTodo(){
     const [description, setDescription] = useState("")
 
     return <div>
+        <center>
+        <div style={{
+            PaddingTop: 150,
+            marginBottom: 10,
+           
+        }}>
         <input id="title" style={{
             padding:10,
             margin:10
@@ -41,5 +47,8 @@ export function CreateTodo(){
                 })
             
         }}>Add Todo</button>
+        </div>
+        </center>
     </div>
+    
 }
